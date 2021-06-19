@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE INTEREST</title>
+    <link href="SI.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>SIMPLE INTEREST CALCULATOR</h2><br><br>
+        <div class="content">
+            <label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Amount &nbsp &nbsp &nbsp</label>
+
+            <input type="number" required id="p"><br><br>
+            <label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Interest Rate &nbsp &nbsp &nbsp</label>
+            <input type="range" value="0" min="0" max="100" id="r" oninput="this.nextElementSibling.value = this.value">
+            <output>0</output>%
+
+
+            <br><br>
+            <label for="number">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp No.of Years &nbsp &nbsp &nbsp</label>
+
+            <select name="number" id="y">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+
+            </select><br><br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <button onclick="myfunction()"> Compute Interest</button>
+            <p id="demo"></p>
+
+        </div><br><br>
+        <footer>&#169 Everyone Can Get Rich</footer>
+    </div>
+</body>
+<script src="SI.js"></script>
+</script>
+
+</html>
